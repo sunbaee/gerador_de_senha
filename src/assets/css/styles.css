@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root {
+    --lblack: rgb(20, 20, 20);
+    --lwhite: rgb(235, 235, 235);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lblack);
+    font-family: 'Inconsolata', monospace;
+    color: var(--lwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 1rem 0;
+    padding: .6rem;
+    color: var(--lblack);
+    background-color: var(--lwhite);
+    border-radius: .6rem;
+}
+
+.form .linha {
+    margin: .3rem;
+}
+
+.generate {
+    font-family: 'Inconsolata', monospace;
+    width: max-content;
+    font-size: 1.5rem;
+    padding: .6rem .8rem;
+    margin: 1rem 0;
+    color: var(--lblack);
+    background-color: var(--lwhite);
+    border-radius: 1rem;
+    border: .1rem solid var(--lblack);
+    transition: all .3s;
+}
+
+.generate:hover {
+    color: var(--lwhite);
+    background-color: var(--lblack);
+    border: .1rem solid var(--lwhite);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.senha {
+    margin: 1rem 0;
+}
+
+input {
+    outline: none;
+}
